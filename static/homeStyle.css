@@ -1,0 +1,344 @@
+body {
+    background-color: rgb(244, 242, 237);
+    font-family: montserrat;
+}
+
+.navbar-brand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-waring {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(236, 209, 132);
+}
+
+.nav-link {
+    padding: 10px;
+    color: black;
+    font-size: 20;
+    margin-left: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-link:hover {
+    background-color: rgb(230, 182, 50);
+    border-radius: 20px;
+    color: aliceblue
+}
+
+.cart-image {
+    width: 40px;
+    height: 30px;
+}
+
+.special-menu-heading {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+
+.para-of-menu {
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.today-hot-dishes {
+    margin: 30px;
+    background-color: black;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.special-menu-header {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.menu-image {
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid;
+}
+
+.carousel-control-prev-icon {
+    color: rgb(236, 209, 132);
+}
+
+.row {
+    padding-top: 70px;
+}
+
+.card {
+    margin-left: 75px;
+    width: 300px;
+    color: aliceblue;
+    background-color: #20202F;
+    border-style: hidden;
+}
+
+.card-img-top {
+    border-radius: 20px;
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+
+.main-header-dishes {
+
+    text-align: center;
+    background-color: #20202F;
+    color: rgb(236, 209, 132);
+}
+
+.main-div {
+    background-color: #20202F;
+}
+
+.main-header-dishes {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.hotDishesImage {
+    padding-top: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.today-hot-dishes {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #20202F;
+}
+
+.hot-dishes-para {
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul.list-group {
+    margin: 50px;
+    justify-content: center;
+}
+
+ul.list-group-item {
+    display: inline-block;
+}
+
+.menu-btn {
+    background: white;
+    border-style: hidden;
+}
+
+.menu-btn:hover {
+    background: black;
+    color: white
+}
+
+.owl-back {
+    padding-bottom: 80px;
+
+}
+
+.link:hover {
+    color: aliceblue;
+}
+
+.list-group-item:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+.link {
+    font-size: larger;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn {
+    border-style: hidden;
+}
+
+.btn:hover {
+    border-style: hidden;
+}
+
+.list-group {
+    border-radius: 20px;
+}
+
+.list-group-item {
+    border-radius: 20px;
+}
+
+
+.row-wrapper {
+    background-color: rgb(236, 209, 132);
+}
+
+.breakfast-text {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+}
+
+.lunch-text {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue
+}
+
+.dinner-text {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue
+}
+
+.dessert-text {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+}
+
+.dishes-timing {
+    padding-left: 5px;
+    color: white;
+    font-size: large;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.breakfastImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.lunchImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.dinnerImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.dessertImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100vw;
+} 
+.profileImage{
+    width:40px;
+    height:30px;
+    border-radius: 50%;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+.dropdown{
+    padding: 10px;
+}
+.dropdown-menu{
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    background-color: #20202F;
+}
+
+.findUs {
+    padding-right: 60px;
+}
+
+.findus-word {
+    color: rgb(236, 209, 132);
+}
+
+.followus-word {
+    color: rgb(236, 209, 132);
+}
+
+.footer-online-text {
+    padding-left: 20px;
+}
+
+.onlineFood-word {
+    color: rgb(236, 209, 132);
+}
+
+.findus-text {
+    padding-left: 10px;
+}
+
+dd {
+    font-size: 18px;
+    display: list-item;
+    list-style-type: "⚪";
+    padding-inline-start: 1ch;
+    padding-left: 10px;
+}
+.socialImages{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+}
+.mapImage{
+    padding-left:20px;;
+    height:200px;
+    width:300px;
+}

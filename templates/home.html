@@ -1,0 +1,343 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering system</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/homeStyle.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container ">
+      <a class="navbar-brand" href="#"><span class="text-waring"
+          style="color:rgb(68, 0, 255)">OnlineFood</span>Ordering</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" id="go-bottom" target="_blank" style="cursor: pointer">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/showteam" target="_blank">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/showabout" target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/showcart" target="_blank"><img class="cart-image" src="/static/Images/cart.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="" class="dropdown-toggle" data-bs-toggle="dropdown"><img class="profileImage" src="/static/Images/profileIcon.png" alt=""></a>
+              <div class="dropdown-menu">
+                  <a href="/showupdateprofile" target="_blank " class="dropdown-item">Edit Profile</a>
+                  <a href="/showchangepassword" target="_blank" class="dropdown-item">Change Password</a>
+                  <a href="/showorderhistory" target="_blank" class="dropdown-item">Order History</a>
+                  <a href="/logout" class="dropdown-item">logOut</a>
+              </div>
+          </div>
+          </li>
+          <!-- 1 edit profile  name, email, contact address
+          2 change password
+          3 order history
+          4 logout  -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="/static/Images/loginImage.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>YOUR DREAM FOOD HERE</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolor alias molestias nostrum eaque
+            cupiditate?</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/static/Images/car-image2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>ALWAYS DEDICATED</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolor alias molestias nostrum eaque
+            cupiditate?</p>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/Images/car-image3.jpg" class="img-dish d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>GREAT PERFECTION</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolor alias molestias nostrum eaque
+            cupiditate?</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="main-div">
+    <img class="hotDishesImage" src="../static/Images/hotDishes.png" alt="">
+    <div class="main-header-dishes">
+      <h1 class="today-hot-dishes">Today's Hot Dishes</h1>
+      <p class="hot-dishes-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ullam facilis aliquam
+        harum autem magni!</p>
+    </div>
+
+
+    <div class="owl-back">
+      <div class="owl-carousel owl-theme" id="owl-carousel">
+        <div class="item">
+          <div class="card">
+            <img src="../static/Images/Dishes/{{ data[0][2] }}.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family:'Quicksand', sans-serif; ">{{ data[0][2] }}</h5>
+              <p class="card-text" style="font-family:'Quicksand', sans-serif; ">{{data[0][3]}}
+                </p>
+              <h5 class="card-price">{{ data[0][4] }}$</h5>
+              <a href="#" class="btn btn-primary" id="car-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="/static/Images/Dishes/{{ data[1][2] }}.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family:'Quicksand', sans-serif; ">{{data[1][2]}}</h5>
+              <p class="card-text" style="font-family:'Quicksand', sans-serif; ">{{data[1][3]}}
+                </p>
+              <h5 class="card-price">{{ data[1][4] }}$</h5>
+              <a href="#" class="btn btn-primary" id="car-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="/static/Images/Dishes/{{ data[2][2] }}.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family:'Quicksand', sans-serif; ">{{data[2][2]}}</h5>
+              <p class="card-text" style="font-family:'Quicksand', sans-serif; ">{{data[2][3]}}
+                </p>
+              <h5 class="card-price">{{ data[2][4] }}$</h5>
+              <a href="#" class="btn btn-primary" id="car-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="/static/Images/Dishes/{{ data[3][2] }}.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family:'Quicksand', sans-serif; ">{{ data[3][2] }}</h5>
+              <p class="card-text" style="font-family:'Quicksand', sans-serif; ">{{data[3][3]}}
+                </p>
+              <h5 class="card-price">{{ data[3][4] }}$</h5>
+              <a href="#" class="btn btn-primary" id="car-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="/static/Images/Dishes/{{ data[4][2] }}.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family:'Quicksand', sans-serif; ">{{data[4][2]}}</h5>
+              <p class="card-text" style="font-family:'Quicksand', sans-serif; ">{{data[4][3]}}
+                </p>
+              <h5 class="card-price">{{ data[4][4] }}$</h5>
+              <a href="#" class="btn btn-primary" id="car-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="special-menu-header">
+    <h1 class="special-menu-heading">
+      Our Special Menu
+      <img class="menu-image" src="../static/Images/menu.png" alt="">
+
+    </h1>
+    <p class="para-of-menu">The role of a good cook ware in the preparation of a sumptuous meal cannot be over
+      emphasized then one consider white bread</p>
+  </div>
+  <div class="container-fluid">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item"><a class="link" href="/showappetizers" target="_blank"><button class="btn">Appetizers</button></a></li>
+        <li class="list-group-item"><a class="link" href="/showbreakfast" target="_blank"><button class="btn">BreakFast</button></a></li>
+        <li class="list-group-item"><a class="link" href="/showlunch" target="_blank"><button class="btn">Lunch</button></a></li>
+        <li class="list-group-item"><a class="link" href="/showdinner" target="_blank"><button class="btn">Dinner</button></a></li>
+        <li class="list-group-item"><a class="link" href="/showdesserts" target="_blank"><button class="btn">Desserts</button></a></li>
+      </ul>
+  </div>
+
+
+
+  <div class="row-wrapper">
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="breakfast">
+            <img class="breakfastImage" src="../static/Images/breakfastImage.png" alt="">
+            <br>
+            <h1 class="breakfast-text">Breakfast</h1>
+            <br>
+            <h3 class="dishes-timing">7.00 am 12.00 pm</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="lunch">
+            <img class="lunchImage" src="../static/Images/lunchImage.png" alt="">
+            <br>
+            <h1 class="lunch-text">Lunch</h1><br>
+            <h3 class="dishes-timing">12.00 pm 5.00 pm</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="dinner">
+            <img class="dinnerImage" src="../static/Images/dinnerImage.png" alt="">
+            <br>
+            <h1 class="dinner-text">Dinner</h1>
+             <br>
+            <h3 class="dishes-timing">5.00 pm 7.00 am</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="dessert">
+            <img class="dessertImage" src="../static/Images/dessertImage.png" alt="">
+            <br>
+            <h1 class="dessert-text">Dessert</h1>
+            <br>
+            <h3 class="dishes-timing">All Day</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="row">
+      <div class="col-sm-5 border-right">
+        <div class="findUs">
+          <h3 class="findus-word col-md-3">Find Us</h3>
+          <dl class="findus-text">
+            <dd>Located in the heart of Lahore, neighboring the buzzing Anarkali Bazar and the Mall Road, PUCIT is the
+              largest institution of higher learning in Pakistan in Computer Science.</dd>
+            <dd>(042) 111 923 923</dd>
+            <dd> +92300 7654567</dd>
+            <dd>Email us at admissions@pucit.edu.pk</dd>
+          </dl>
+          <img class="mapImage" src="/static/Images/mapImage.png" alt="">
+        </div>
+
+      </div>
+      <div class="col-sm-3 border-right">
+        <div class="FollowUs">
+          <h3 class="followus-word">Follow Us</h3>
+          <h5 class="followus-text">Folow us on social media as well</h5>
+        </div>
+        <br>
+        <div>
+          <img class="socialImages" src="/static/Images/twitter.png" alt="">
+          <img class="socialImages" src="/static/Images/whatsapp.png" alt="">
+          <img class="socialImages" src="/static/Images/insta.png" alt="">
+          <img class="socialImages" src="/static/Images/facebook.png" alt="">
+        </div>
+      </div>
+      <div class="col-sm-3 broder-right">
+        <div class="footer-online-text">
+          <h3 class="onlineFood-word">OnlineFood</h3>
+          <p>What makes an onlineFood high quality?
+            A good Online Food setup sets a high standard for its food quality and ensures that guests receive the same
+            quality
+            with every meal. Serving quality food can earn your bussiness a good reputation and compel your guests to
+            return for repeat visits.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../static/addToCart.js"></script>
+  <script>
+    $(document).ready(function (){
+        $(document).on("click","#go-bottom",function (){
+            $(document).scrollTop($(document).height());
+        })
+    })
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,37 @@
+.number{
+    font-size: 22px;
+    font-weight: 600;
+    padding-top:48px;
+    padding-left: 10px;
+}
+body,html{
+    background-color: antiquewhite;
+}
+.container-fluid{
+    background-color: antiquewhite;
+
+}
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+.text-details{
+    margin-top: 50px;
+    margin-left: 600px;
+}
+.list-group-item{
+    background-color: antiquewhite;
+}
+.container-fluid{
+    margin:auto;
+}
+h3{
+    font-family: 'Quicksand', sans-serif;
+    background-color: antiquewhite;
+    text-align: center;
+}

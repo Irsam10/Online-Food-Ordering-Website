@@ -1,0 +1,43 @@
+ <html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/signUp.css">
+	<title>Login/SingUp</title>
+ </head>
+ <body>
+	<div class="main">
+		<div class="register">
+			<h2>SignUp Here</h2>
+			<form action="/dosignup" class="form-register" method="post">
+                <label> Name : </label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter Your Name">
+                <br><br>
+                <label> Email : </label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter Your Email Address">
+                <br><br>
+                <label> Password : </label>
+                <br>
+                <input type="password" name="pwd" id="name" placeholder="Enter a password">
+                <br><br>
+                <label> Contact : </label>
+                <br>
+                <input type="text" name="contact" id="name" placeholder="Enter your contact number">
+                <br><br>
+                <label> Address : </label>
+                <br>
+                <input type="text" name="address" id="name" placeholder="Enter your adress here">
+                <br><br>
+                <input class="Submit-btn" type="submit" value="Submit" name="submit" id="submit">
+                <br>
+			</form>
+            {% if error != None %}
+            {{ error }}
+            {% endif %}
+		</div>
+	</div>
+ </body>
+ </html>

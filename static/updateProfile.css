@@ -1,0 +1,62 @@
+body,html {
+    background-color: rgb(32, 45, 59);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+ 
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 20px;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+.container{
+    background-color: #BA68C8;
+} 
+.main-body{
+    background-color: rgb(32, 45, 59);
+    color:  rgb(32, 45, 59); 
+}
+.container { 
+    background-color: rgb(236, 209, 132);
+}
+.form-control{
+    padding: 15px;
+}
+.text-right{
+    padding: 5px;
+    background-color: rgb(252, 190, 20);
+    color: white;
+    border-radius: 5px; 
+} 
+
+.logOut{
+    margin-top:20px;
+    background-color: black;
+    color:aliceblue;
+    
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding:13px 30px; 
+     border-radius: 8px;
+}
+.logOut:hover{
+    background-color: rgb(70, 64, 64);
+    border:2px solid rgb(236, 209, 132);
+    color:white;
+    cursor: pointer;
+}

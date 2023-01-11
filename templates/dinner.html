@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/our-special-dishes.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Dinner</h1>
+        <p>The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one
+            consider white bread</p>
+        <div class="Make-Circle">
+            <img class="image" src="../static/Images/icon3.png ">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container px-4 text-center">
+            <div id="rowContainer" class="row gx-5">
+                {% for i in range(0,count) %}
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img id="imgId" src="/static/Images/Dishes/{{ data[i][2] }}.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ data[i][2] }}</h5>
+                                <p class="card-text">{{ data[i][3] }}.</p>
+                                <h5 class="card-price">${{ data[i][4] }}</h5>
+                                <a id="add-btn" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" integrity="sha512-Pa4Jto+LuCGBHy2/POQEbTh0reuoiEXQWXGn8S7aRlhcwpVkO8+4uoZVSOqUjdCsE+77oygfu2Tl+7qGHGIWsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../static/addToCart.js"></script>
+</body>
+
+</html>
+

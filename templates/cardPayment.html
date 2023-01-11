@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../static/cardPayment.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" id="name" placeholder="MR ABC">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" id="card-email" placeholder="abc@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" id="card-address" placeholder="Street # House #">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" id="card-city" placeholder="Lahore">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" id="card-state" placeholder="Pakistan">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" id="card-code" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="../static/Images/cardtypes.jpg" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" id="card-name" placeholder="Mr. AbC XYZ">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" id="card-number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" id="card-expmonth" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" id= "card-expyear" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" id="card-cvv" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input id="submit" type="submit" value="Confirm Order" class="submit-btn">
+
+    </form>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    var data= {{ data|tojson|safe }};
+    console.log(data)
+    data = data.replace(/'/g,'"')
+    function isEmail(email) {
+          var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          return regex.test(email);
+    }
+    function isEmpty(data){
+        if(data){
+            return false
+        }
+        else{
+            return true
+        }
+
+    }
+    $(document).ready(function (){
+        $(document).on('click','#submit',function (e){
+            e.preventDefault()
+            let name= $("#name").val()
+            let email = $("#card-email").val()
+            let address = $("#card-address").val()
+            let state = $("#card-state").val()
+            let code = $("#card-code").val()
+            let cardName = $("#card-name").val()
+            let cardNumber = $("#card-number").val()
+            let month = $("#card-expmonth").val()
+            let year = $("#card-expyear").val()
+            if(isEmpty(name) || isEmpty(email) || isEmpty(state) || isEmpty(address)||  isEmpty(address)||  isEmpty(code)||  isEmpty(cardName)||  isEmpty(cardNumber)||  isEmpty(month)||  isEmpty(year)){
+                    alert("One or more fields are empty")
+                    location.reload()
+            }
+            else{
+                    if(isEmail(email)==false){
+                        alert("Email is not in correct format")
+                        location.reload()
+                    }
+                    else{
+                         $.ajax({
+                            url: '/addorderviacard',
+                            type: 'POST',
+                             async: false,
+                            data:{
+                                javascript_data: data
+                            },
+                            success: function (response){
+                                console.log(response)
+                                window.location.href= response.redirect
+                            },
+                            error: function (response){
+                            }
+                         });
+                    }
+            }
+        })
+    })
+
+</script>
+</body>
+</html>

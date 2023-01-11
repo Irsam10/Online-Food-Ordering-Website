@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    padding-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(244, 242, 237);
+    background-image: url("../static/Images/loginImage.png");
+
+}
+
+.main {
+    padding-top: 40px;
+    width: 400px;
+    margin: 10px auto 0px auto;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.register {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 20);
+    color: rgb(0, 0, 0);
+}
+
+.form-register {
+    padding-left:55px;
+    padding-bottom: 10px;;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+input#name {
+    font-size: 14px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: 0;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.Submit-btn{
+    width:300px;
+    height:50px;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+}
+.Submit-btn:hover{
+    background-color: white;
+    border:5px solid rgb(236, 209, 132);
+    color:black;
+    cursor: pointer;
+}
