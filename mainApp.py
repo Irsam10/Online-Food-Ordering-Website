@@ -391,6 +391,6 @@ def showOrderHistory():
         return render_template("login.html", error="One or more fields are empty")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
 
 #{"paymentMethod":"cash on delivery"}
